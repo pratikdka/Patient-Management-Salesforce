@@ -1,0 +1,7 @@
+<aura:component implements="lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId" access="global" Controller = "FollowListController">
+    
+    <aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="fieldName" type="String" />
+    <aura:attribute name="followlistValues" type="Object" />
+    <aura:handler name="init" value ="{!this}" action="{!c.doInit}"/>
+</aura:component>

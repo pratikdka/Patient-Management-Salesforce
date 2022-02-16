@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#2ABE60</headerColor>
+        <logo>Hospitalbuildingsigncloseup</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Patient Management System in Hospital</label>
+    <navType>Standard</navType>
+    <tabs>About_Our_Doctors</tabs>
+    <tabs>Doctor_Available</tabs>
+    <tabs>Patient__c</tabs>
+    <tabs>Hospital_Payment_Section__c</tabs>
+    <tabs>Common_Lab_Tests__c</tabs>
+    <tabs>Follow_Up__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Hospital_System_UtilityBar</utilityBar>
+</CustomApplication>

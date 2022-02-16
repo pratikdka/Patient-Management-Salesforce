@@ -1,0 +1,104 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+    <aura:attribute name="title1" type="String" default=" Meet Our Allergist Experts"/>
+    <aura:attribute name="title2" type="String" default=" Get to Know More About Anaesthesiologist "/>
+    <aura:attribute name="title3" type="String" default=" Cardio Experts, Meet them now"/>
+    
+    <Lightning:card class="lcard">
+        
+        <div class = " slds-text-align_center"  style = "text-align:center; justify-content:space-between; ">
+            <h1 class="slds-text-heading_medium" style ="color:orange;padding:8px;font-size:32px;"> Why Choose Us ? </h1>
+               <p class =  "slds-text-align_center " style = "color:#660066;font-size:14px; font-style:italic;"> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."<br/>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            </p>
+               
+        </div>
+    </Lightning:card>
+    
+    <br/>
+    
+    <div class= "container " Style="Background-color:cyan;width:1350px;">
+        
+        <div class="element">
+            <lightning:card>
+                <aura:set attribute="title">
+                    <div class=" slds-align_absolute-center slds-text-heading_medium iconandtitle" style="justify-content: space-around; color:Black;">
+                        {! v.title1 }
+                    </div>
+                </aura:set>
+                <c:ImageClick aura:id="childPopup"/>
+                <div class="slds-grid">
+                    <div class="slds-col slds-align-top">
+                        <span Style="color:black; font-size: 18px;">
+                            <img src="{!$Resource.Doctor1}" alt="User avatar"  onclick="{!c.openDoctorDetails}" style="max-width: 200px;height:200px;"/>   
+                            Dr.Bhanu Prakash         
+                        </span>
+                        
+                    </div>
+                    
+                    
+                    <div class="slds-col slds-align-middle">
+                        <span Style="color:black; font-size: 18px;">
+                            <img src="{!$Resource.Doctor2}" alt="User avatar" style="max-width: 200px;height:200px;"/>
+                            Dr. Bikash Nepal
+                        </span>
+                    </div>      
+                </div> 
+            </lightning:card>
+            
+            <lightning:card>
+                <aura:set attribute="title">
+                    <div class=" slds-align_absolute-center slds-text-heading_medium iconandtitle" style="justify-content: space-between;color:Black;" >
+                        {! v.title2 } 
+                    </div>
+                </aura:set>
+                
+                <div class="slds-grid">
+                    <div class="slds-col slds-align-top">
+                        <span Style="color:black; font-size: 18px;">
+                            <img src="{!$Resource.Doctor3}" alt="User avatar" style="max-width: 2200px;height:200px;"/>
+                            Dr. Bilash Gautam
+                        </span>
+                    </div>
+                    
+                    
+                    
+                    <div class="slds-col slds-align-middle">
+                        <span Style="color:black; font-size: 18px;">
+                            <img src="{!$Resource.Doctor4}" alt="User avatar" style="max-width: 220px;height:200px;"/>
+                            Dr. Bishal Raj
+                        </span>
+                    </div>      
+                </div> 
+            </lightning:card>
+            
+            <lightning:card>
+                <aura:set attribute="title">
+                    <div class=" slds-align_absolute-center slds-text-heading_medium iconandtitle" style="justify-content: space-between;color:Black;" >
+                        {! v.title3}
+                    </div>
+                </aura:set>
+                
+                <div class="slds-grid">
+                    <div class="slds-col slds-align-top">
+                        <span Style="color:black; font-size: 18px;">
+                            <img src="{!$Resource.Doctor5}" alt="User avatar" style="max-width: 200px;height:200px;"/>
+                            Dr. Gautam Yadav
+                        </span>
+                    </div>
+                    
+                    
+                    <div class="slds-col slds-align-middle">
+                        <span Style="color:black; font-size: 18px;">
+                            <img src="{!$Resource.Doctor6}" alt="User avatar" style="max-width: 200px;height:200px;"/>
+                            Dr. Gyanu Prasad
+                        </span>
+                    </div>
+                    
+                </div> 
+            </lightning:card>
+            
+            
+        </div>
+    </div>
+</aura:component>

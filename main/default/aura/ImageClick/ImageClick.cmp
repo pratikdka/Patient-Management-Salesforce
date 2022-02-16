@@ -1,0 +1,46 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:method name="submitDR" action="{!c.openEventPopup}">
+        <aura:attribute name="showModalFade" type="string"/>
+        <aura:attribute name="darkModalBackdrop" type="String"/>
+    </aura:method>
+    
+    
+    <section role="dialog" class="slds-modal" aura:id="modalFade">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <h2 class="slds-text-heading_medium slds-hyphenate" style = "color:green; font-weight:bold;">Dr. Bhanu Prakash</h2>
+            </header>
+            
+            <div class="slds-modal__content slds-p-around_medium slds-align_absolute-center" >
+                <img src="{!$Resource.Doctor1}" style = "max-width: 340px;height:340px;"/> <br/>
+                <div>   <h1 style = "font-size: 20px; font-weight:bold;color:green;">    Professional Summary  </h1>
+                    Versatile Doctor with multiple board certifications seeking new general practitioner role.Hard-Working and compassionate medical professional.
+                    
+                    <hr class="new5" style = "border: 8px solid green; border-radius: 3px;"/>
+                    
+                    <h1 style = "font-size: 20px; font-weight:bold;color:green;"> Skills</h1> 
+                    <ol>
+                        <li>Patient Care</li>
+                        <li>Disease Prevention</li>
+                        <li>Case Management</li>
+                    </ol>
+                    
+                    <hr class="new5" style = "border: 8px solid green; border-radius: 3px;"/>
+                    
+                    <h1 style = "font-size: 20px; font-weight:bold; color:green;">Education</h1> 
+                    University of California - Berkeley, CA <br/>
+                    M.D. : Medicine
+                    
+                    <hr class="new5" style = "border: 8px solid green; border-radius: 3px;"/>
+                </div> 
+                 
+            </div>
+            
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button--destructive" onclick="{!c.closeEventPopup}">Back</button>
+            </footer>
+        </div>
+        
+    </section>
+    <div class="slds-backdrop" aura:id="modalBackdrop"></div>
+</aura:component>
