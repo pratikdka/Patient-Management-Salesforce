@@ -6,4 +6,4 @@
     <errorConditionFormula>Username != PRIORVALUE(Username)</errorConditionFormula>
     <errorDisplayField>Username</errorDisplayField>
     <errorMessage>Please do not change usernames in the Trailhead Playground.</errorMessage>
-</ValidationRule>    
+</ValidationRule>
