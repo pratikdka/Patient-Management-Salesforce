@@ -60,11 +60,6 @@
                 <default>false</default>
                 <label>5:45 PM - 6:00 PM</label>
             </value>
-            <value>
-                <fullName>6:30 PM - 7:45 PM</fullName>
-                <default>false</default>
-                <label>6:30 PM - 7:45 PM</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
